@@ -33,19 +33,8 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
-		window.plugins.PushbotsPlugin.initialize("5819ab8a4a9efa65518b4567", {"android":{"sender_id":"713190758664"}});
-		
-		// Should be called once app receive the notification only while the application is open or in background
-		window.plugins.PushbotsPlugin.on("notification:received", function(data){
-			console.log("received:" + JSON.stringify(data));
-		});
-		
-		// Should be called once the notification is clicked
-		window.plugins.PushbotsPlugin.on("notification:clicked", function(data){
-			console.log("clicked:" + JSON.stringify(data));
-		});
-		
         app.receivedEvent('deviceready');
+		window.plugins.PushbotsPlugin.initialize("PUSHBOTS_APPLICATION_ID", {"android":{"sender_id":"GOOGLE_SENDER_ID"}});
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {

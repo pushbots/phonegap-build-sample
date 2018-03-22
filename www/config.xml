@@ -21,13 +21,13 @@
 
     <!-- Customize your app and platform with the preference element. -->
     <preference name="DisallowOverscroll"         value="true" />
-	<gap:plugin name="pushbots-cordova-plugin" spec="1.5.3" source="npm" />
+	<gap:plugin name="pushbots-cordova-plugin" spec="1.5.x" source="npm" />
 	<preference name="android-minSdkVersion" value="15" />
 	<preference name="android-build-tool" value="gradle" />
 	
     <!-- Define a specific version of PhoneGap to build into your app. -->
     <!-- <preference name="phonegap-version"       value="cli-6.0.0" /> -->
-	<preference name="phonegap-version" value="cli-7.0.1" />
+	<preference name="phonegap-version" value="cli-7.1.0" />
 
     <!-- Plugins -->
     <!-- Core plugins -->
